@@ -1,0 +1,27 @@
+<%- include('includes/head') %>
+<div class="tarefas">
+    <h1>Tarefas</h1>
+    <% for (let tarefa of tarefas) { %>
+        <div class="tarefa">
+            <h3><%= tarefa.tarefa %></h3>
+            
+            <div class="act">
+                <div class="info">
+                    <span>
+                        <%= tarefa.data.getDate() + 1 %>/<%= tarefa.data.getMonth() + 1 %>/<%= tarefa.data.getFullYear() %>  
+                    </span>
+                    <span><%= tarefa.time %> </span>
+                </div>
+                <form action="/apagar" method="POST">
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                    <input type="hidden" name="id" value="<%= tarefa._id %>">
+                    <button>Apagar</button>
+                </form>
+            </div>
+        </div>
+    <% } %>
+    <button>
+        <a href="/">Voltar</a>
+    </button>
+</div>
+<%- include('includes/footer') %>

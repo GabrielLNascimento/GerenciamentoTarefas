@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página para centralizar o conteúdo */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6b73ff, #000dff);
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.actions {
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+}
+
+/* Estiliza o contêiner do formulário */
+.form-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Estiliza o rótulo */
+.form-container label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Estiliza o campo de entrada */
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="time"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estiliza o botão */
+.form-container button,
+.actions button
+{
+    background-color: #6b73ff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+.form-container button:hover {
+    background-color: #000dff;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tarefas {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tarefas h1 {
+    margin-bottom: 20px;
+}
+
+.tarefas .tarefa {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tarefas .tarefa .info,
+.tarefas .tarefa .act {
+    display: flex;
+    gap: 15px;
+}
+
+.tarefas button {
+    background-color: #6b73ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5156c0;
+}
+

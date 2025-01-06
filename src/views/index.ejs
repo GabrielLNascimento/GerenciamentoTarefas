@@ -1,0 +1,15 @@
+<%- include('includes/head') %>
+<div class="actions">
+    <button><a href="/tarefas">Ver tarefas</a></button> 
+</div>
+<form action="/" method="POST" class="form-container">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <label for="nome">Tarefa: </label>
+    <input type="text" name="nome" id="nome" required class="input">
+    <label for="data">Data: </label>
+    <input type="date" name="data" id="data" required class="input">
+    <label for="time">Hora: </label>
+    <input type="time" name="time" id="time" required class="input">
+    <button type="submit">Enviar</button>
+</form>
+<%- include('includes/footer') %>
